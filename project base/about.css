@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-blue: #1192F0;
+    --dark-blue: #0A6EBA;
+    --light-blue: #E8F4FD;
+    --white: #FFFFFF;
+    --off-white: #F9FBFD;
+    --light-gray: #F0F4F8;
+    --medium-gray: #E1E8F0;
+    --text-dark: #1A1A1A;
+    --text-medium: #4A5568;
+    --text-light: #718096;
+    --shadow: 0 8px 30px rgba(17, 146, 240, 0.08);
+    --shadow-hover: 0 15px 40px rgba(17, 146, 240, 0.12);
+    --border-radius: 12px;
+    --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.7;
+    color: var(--text-medium);
+    background-color: var(--off-white);
+    overflow-x: hidden;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 100%;
+    padding: 0 30px;
+}
+
+/* Header with Hero Section */
+.hero-header {
+    position: relative;
+    padding: 60px 0 40px;
+    background: linear-gradient(135deg, var(--white) 0%, var(--light-blue) 100%);
+    overflow: hidden;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0 10px 30px rgba(17, 146, 240, 0.1);
+    margin-bottom: 60px;
+}
+
+.hero-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(17, 146, 240, 0.05) 0%, transparent 70%);
+    z-index: 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.logo-icon {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+    color: var(--white);
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    font-size: 26px;
+    box-shadow: 0 6px 20px rgba(17, 146, 240, 0.3);
+}
+
+.logo-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, #0A4D8C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.tagline {
+    font-size: 20px;
+    color: var(--text-medium);
+    max-width: 800px;
+    margin: 0 auto 30px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.company-stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--primary-blue);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
