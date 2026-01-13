@@ -1,0 +1,20 @@
+{
+    "Students":[
+        {
+            "name":"Abdirisak",
+            "Tell":771889900,
+            "Address":"Howl-wadaag",
+            "Street":"Jid-mareexaan",
+            "Ref-person":"Mamo Duniya",
+            "phone":772881155
+        },
+        {
+            "name":"Mohamed",
+            "Tell":771887733,
+            "Address":"waberri",
+            "Street":"Isgoyska waberi",
+            "Ref-person":"Mamo xaliim",
+            "phone":772886677
+        }
+    ]
+}
